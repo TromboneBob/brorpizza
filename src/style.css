@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  color: #000;
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.status-title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.status-stamp {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto 4rem;
+  padding: 0.75rem 2.5rem;
+  transform: rotate(-2deg);
+  border: 3px solid currentColor;
+  box-shadow: inset 0 0 0 2px currentColor;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.status-stamp.open {
+  color: #1d6840;
+}
+
+.status-stamp.low {
+  color: #b5551d;
+}
+
+.status-stamp.soldout {
+  color: #c0392b;
+}
+
+.status-stamp.closed {
+  color: #777;
+}
+
+main {
+  background: #fff;
+  max-width: 680px;
+  width: 100%;
+  padding: 3rem 2.5rem 4rem;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 1.25rem;
+}
+
+.logo img {
+  width: 85%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.tagline {
+  font-family: "IM Fell English", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.hours {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.75rem;
+  line-height: 1.75;
+  max-width: 480px;
+  margin: 0 auto 3.5rem;
+  color: #444;
+}
+
+.menu-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.menu-label {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+
+.menu-sub {
+  font-size: 0.85rem;
+  color: #666;
+  letter-spacing: 0.03em;
+}
+
+.menu-divider {
+  border: none;
+  border-top: 1.5px solid #000;
+  margin-bottom: 2.5rem;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.item-dots {
+  flex: 1;
+  border-bottom: 2px dotted #000;
+  margin: 0 0.5rem;
+  margin-bottom: 4px;
+}
+
+.item-price {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.item-desc {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #444;
+  margin-top: 0.15rem;
+  line-height: 1.5;
+}
+
+.allergens::before {
+  content: "Inneholder: ";
+  font-weight: 700;
+}
+
+.allergens {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #444;
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+.item-badge {
+  display: none;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 6px;
+  margin-left: 0.5rem;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.item-badge.low {
+  display: inline-block;
+  background: #b5551d;
+  color: #fff;
+}
+
+.item-badge.soldout {
+  display: inline-block;
+  background: #c0392b;
+  color: #fff;
+}
+
+li.pizza-soldout .item-row {
+  opacity: 0.4;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  font-size: 0.65rem;
+  color: #888;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 2rem 1.25rem 3rem;
+  }
+}

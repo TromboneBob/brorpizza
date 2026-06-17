@@ -1,0 +1,44 @@
+{
+  "label": "Meny",
+  "subtitle": "Porsjonspizza",
+  "currency": "NOK",
+  "currencyDisplay": "kr",
+  "items": [
+    {
+      "id": "margherita",
+      "displayName": "no.2 - Margherita",
+      "schemaName": "no.2 – Margherita",
+      "description": "Den opprinnelige. Tomat, fior di latte, basilikum.",
+      "schemaDescription": "Tomat, fior di latte, basilikum",
+      "allergens": ["Gluten", "Melk"],
+      "price": 205
+    },
+    {
+      "id": "sopp-og-bacon",
+      "displayName": "no. 15 - Sopp & Bacon",
+      "schemaName": "no.15 – Sopp & Bacon",
+      "description": "Eldhusrøykt bacon, marinert sopp, løk, typisk hyttemat",
+      "schemaDescription": "Eldhusrøykt bacon, marinert sopp, løk",
+      "allergens": ["Gluten", "Melk"],
+      "price": 255
+    },
+    {
+      "id": "romme-og-laks",
+      "displayName": "no.27 - Rømme & Laks ",
+      "schemaName": "no.27 – Rømme & Laks",
+      "description": "Rømme, røykelaks, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982.",
+      "schemaDescription": "Rømme, røykelaks, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982.",
+      "allergens": ["Gluten", "Melk"],
+      "price": 305
+    },
+    {
+      "id": "peperoni",
+      "displayName": "no. 28 - Prosciutto & Sopp",
+      "schemaName": "no.28 – Prosciutto & Sopp",
+      "description": "San Marzano, mozarella, peperoni",
+      "schemaDescription": "San Marzano, mozarella, peperoni",
+      "allergens": ["Gluten", "Melk", "Sulfitter"],
+      "price": 245
+    }
+  ]
+}
