@@ -1,5 +1,19 @@
 import "./style.css";
 
+const COMING_SOON = true; // flip to false to publish the full site
+
+if (COMING_SOON) {
+  const main = document.querySelector("main")!;
+  main.className = "coming-soon";
+  main.innerHTML = `
+    <h1 class="sr-only">Bror – Surdeigspizza i Rosendal</h1>
+    <div class="logo"><img src="/bror-logo.svg" alt="Bror logo" /></div>
+    <p class="coming-soon-title">Vi åpner snart!</p>
+    <p class="coming-soon-location">Vinduet på Rosendal Samfunnshus</p>
+    <p class="tagline">Surdeigspizza</p>
+  `;
+}
+
 const SUPABASE_FUNCTION_URL =
   "https://bfttnghiuqskmpfsmfep.supabase.co/functions/v1/pizza-status";
 

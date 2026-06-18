@@ -19,6 +19,12 @@ body {
   justify-content: center;
 }
 
+body:has(main.coming-soon) {
+  padding: 0;
+  align-items: center;
+  min-height: 100vh;
+}
+
 a {
   color: inherit;
 }
@@ -71,6 +77,43 @@ main {
   max-width: 680px;
   width: 100%;
   padding: 3rem 2.5rem 4rem;
+}
+
+main.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-location {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+main.coming-soon .logo {
+  max-width: 260px;
+  margin-bottom: 2.5rem;
+}
+
+main.coming-soon .tagline {
+  margin-bottom: 0;
 }
 
 .logo {
