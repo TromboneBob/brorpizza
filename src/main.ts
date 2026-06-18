@@ -9,7 +9,7 @@ if (COMING_SOON) {
     <h1 class="sr-only">Bror – Surdeigspizza i Rosendal</h1>
     <div class="logo"><img src="/bror-logo.svg" alt="Bror logo" /></div>
     <p class="coming-soon-title">Vi åpner snart!</p>
-    <p class="coming-soon-location">Vinduet på Rosendal Samfunnshus</p>
+    <p class="coming-soon-location">I vinduet på Rosendal Samfunnshus</p>
     <p class="tagline">Surdeigspizza</p>
   `;
 }
