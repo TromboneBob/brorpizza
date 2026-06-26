@@ -76,6 +76,9 @@ function menuHtmlPlugin() {
 
 export default defineConfig({
   plugins: [menuHtmlPlugin()],
+  server:{
+    allowedHosts:["weatherworn-vernice-occultly.ngrok-free.dev"]
+},
   build: {
     rollupOptions: {
       input: {

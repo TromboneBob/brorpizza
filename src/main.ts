@@ -1,6 +1,6 @@
 import "./style.css";
 
-const COMING_SOON = true; // flip to false to publish the full site
+const COMING_SOON = false;
 
 if (COMING_SOON) {
   const main = document.querySelector("main")!;
@@ -19,6 +19,7 @@ const SUPABASE_FUNCTION_URL =
 
 const STATUS_MAP: Record<string, { cls: string; label: string }> = {
   Åpen: { cls: "open", label: "ÅPEN" },
+  "Åpner snart": { cls: "soon", label: "ÅPNER SNART!" },
   "Nesten utsolgt": { cls: "low", label: "NESTEN UTSOLGT" },
   Utsolgt: { cls: "soldout", label: "UTSOLGT" },
   Stengt: { cls: "closed", label: "STENGT" },

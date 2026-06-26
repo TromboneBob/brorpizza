@@ -19,7 +19,7 @@ export function getRestaurantJsonLd(menu: Menu) {
     description:
       "Bror er en pop-up pizzarestaurant i Rosendal, Vestland. Vi lager håndstrakt surdeigspizza med langtidshevd deig og norske råvarer, inspirert av neapolitansk tradisjon. Takeaway fra Rosendal Samfunnshus.",
     url: "https://brorpizza.no/",
-    email: "post@brorpizza.no",
+    email: "hei@brorpizza.no",
     servesCuisine: [
       "Pizza",
       "Surdeigspizza",

@@ -127,6 +127,10 @@
         color: #991c1c;
       }
 
+      .status-stamp.soon {
+        color: #a07000;
+      }
+
       .status-stamp.closed {
         color: #777;
       }
@@ -303,6 +307,9 @@
             <button class="btn" id="btn-open" type="button" onclick="setStatus('open')">
               Åpen
             </button>
+            <button class="btn" id="btn-soon" type="button" onclick="setStatus('soon')">
+              Åpner snart
+            </button>
             <button
               class="btn"
               id="btn-almostout"
@@ -343,6 +350,7 @@
 
       const STATUS_KEY = {
         Åpen: "open",
+        "Åpner snart": "soon",
         "Nesten utsolgt": "almostout",
         Utsolgt: "outofstock",
         Stengt: "closed",

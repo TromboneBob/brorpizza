@@ -6,8 +6,8 @@
   "items": [
     {
       "id": "margherita",
-      "displayName": "no.2 - Margherita",
-      "schemaName": "no.2 – Margherita",
+      "displayName": "no. 2 - Margherita",
+      "schemaName": "no. 2 – Margherita",
       "description": "Den opprinnelige. Tomat, fior di latte, basilikum.",
       "schemaDescription": "Tomat, fior di latte, basilikum",
       "allergens": ["Gluten", "Melk"],
@@ -16,29 +16,38 @@
     {
       "id": "sopp-og-bacon",
       "displayName": "no. 15 - Sopp & Bacon",
-      "schemaName": "no.15 – Sopp & Bacon",
-      "description": "Eldhusrøykt bacon, marinert sopp, løk, typisk hyttemat",
-      "schemaDescription": "Eldhusrøykt bacon, marinert sopp, løk",
+      "schemaName": "no. 15 – Sopp & Bacon",
+      "description": "Bacon fra Friheim Gardsmat, sopp, San Marzano. Typisk hyttemat.",
+      "schemaDescription": "San Marzano, bacon fra Friheim Gardsmat, sopp. Typisk hyttemat.",
       "allergens": ["Gluten", "Melk"],
-      "price": 255
+      "price": 245
+    },
+    {
+      "id": "sopp-og-bacon",
+      "displayName": "no. 15.5 - Sopp & Bacon (hvit)",
+      "schemaName": "no. 15.5 – Sopp & Bacon (hvit)",
+      "description": "Bacon fra Friheim Gardsmat, sopp, Crème fraîche, gressløk",
+      "schemaDescription": "Bacon fra Friheim Gardsmat, sopp, Crème fraîche, gressløk",
+      "allergens": ["Gluten", "Melk"],
+      "price": 245
     },
     {
       "id": "romme-og-laks",
-      "displayName": "no.27 - Rømme & Laks ",
-      "schemaName": "no.27 – Rømme & Laks",
-      "description": "Rømme, røykelaks, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982.",
-      "schemaDescription": "Rømme, røykelaks, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982.",
+      "displayName": "no. 27 - Crème Fraîche & Ørret*",
+      "schemaName": "no. 27 – Crème Fraîche & Ørret",
+      "description": "Crème Fraîche, røkt ørret, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982. * Denne må kjøle litt før montering, så noe ekstra ventetid må beregnes.",
+      "schemaDescription": "Crème Fraîche, røkt ørret, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982.",
       "allergens": ["Gluten", "Melk"],
-      "price": 305
+      "price": 295
     },
     {
       "id": "peperoni",
-      "displayName": "no. 28 - Prosciutto & Sopp",
-      "schemaName": "no.28 – Prosciutto & Sopp",
-      "description": "San Marzano, mozarella, peperoni",
-      "schemaDescription": "San Marzano, mozarella, peperoni",
+      "displayName": "no. 28 - Peperoni & Løk",
+      "schemaName": "no. 28 – Peperoni & Løk",
+      "description": "San Marzano, mozarella, peperoni, løk, oregano",
+      "schemaDescription": "San Marzano, mozarella, peperoni, oregano",
       "allergens": ["Gluten", "Melk", "Sulfitter"],
-      "price": 245
+      "price": 235
     }
   ]
 }
