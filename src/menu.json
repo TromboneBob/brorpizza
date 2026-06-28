@@ -46,7 +46,7 @@
       "schemaName": "no. 28 – Peperoni & Løk",
       "description": "San Marzano, mozarella, peperoni, løk, oregano",
       "schemaDescription": "San Marzano, mozarella, peperoni, oregano",
-      "allergens": ["Gluten", "Melk", "Sulfitter"],
+      "allergens": ["Gluten", "Melk"],
       "price": 235
     }
   ]
