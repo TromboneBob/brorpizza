@@ -19,7 +19,7 @@ const SUPABASE_FUNCTION_URL =
 
 const STATUS_MAP: Record<string, { cls: string; label: string }> = {
   Åpen: { cls: "open", label: "ÅPEN" },
-  "Åpner snart": { cls: "soon", label: "ÅPNER SNART!" },
+  "Åpner snart": { cls: "soon", label: "ÅPNER SNART IGJEN!" },
   "Nesten utsolgt": { cls: "low", label: "NESTEN UTSOLGT" },
   Utsolgt: { cls: "soldout", label: "UTSOLGT" },
   Stengt: { cls: "closed", label: "STENGT" },
