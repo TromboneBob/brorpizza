@@ -14,11 +14,11 @@
       "price": 205
     },
     {
-      "id": "skinke",
-      "displayName": "no. 6 - Prageskinke",
-      "schemaName": "no. 6 - Prageskinke",
-      "description": "Prageskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
-      "schemaDescription": "Prageskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
+      "id": "sopp-og-bacon",
+      "displayName": "no. 15 - Sopp & Bacon",
+      "schemaName": "no. 15 – Sopp & Bacon",
+      "description": "Bacon fra Friheim Gardsmat, sopp, San Marzano. Typisk hyttemat.",
+      "schemaDescription": "San Marzano, bacon fra Friheim Gardsmat, sopp. Typisk hyttemat.",
       "allergens": ["Gluten", "Melk"],
       "price": 245
     },
@@ -32,6 +32,15 @@
       "price": 245
     },
     {
+      "id": "romme-og-laks",
+      "displayName": "no. 27 - Crème Fraîche & Ørret*",
+      "schemaName": "no. 27 – Crème Fraîche & Ørret",
+      "description": "Crème Fraîche, røkt ørret, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982. * Denne må kjøle litt før montering, så noe ekstra ventetid må beregnes.",
+      "schemaDescription": "Crème Fraîche, røkt ørret, dill. Inspirert av Wolfgang Pucks signaturservering på Spago i 1982.",
+      "allergens": ["Gluten", "Melk"],
+      "price": 295
+    },
+    {
       "id": "peperoni",
       "displayName": "no. 28 - Peperoni & Løk",
       "schemaName": "no. 28 – Peperoni & Løk",
@@ -39,15 +48,6 @@
       "schemaDescription": "San Marzano, mozarella, peperoni, oregano",
       "allergens": ["Gluten", "Melk"],
       "price": 235
-    },
-    {
-      "id": "mortadella-pesto",
-      "displayName": "no. 33 - Mortadella & Pesto*",
-      "schemaName": "no. 33 - Mortadella & Pesto*",
-      "description": "Mortadella, pesto, strchiatella, Crème fraîche, semitørkede tomater. *Må kjøle litt for montering, så beregn noe ekstra tilberedningstid.",
-      "schemaDescription": "Mortadella, pesto, strchiatella, Crème fraîche, semitørkede tomater",
-      "allergens": ["Gluten", "Melk", "Nøtter"],
-      "price": 295
     }
   ]
 }
