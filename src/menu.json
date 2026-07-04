@@ -15,10 +15,10 @@
     },
     {
       "id": "skinke",
-      "displayName": "no. 6 - Prageskinke",
-      "schemaName": "no. 6 - Prageskinke",
-      "description": "Prageskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
-      "schemaDescription": "Prageskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
+      "displayName": "no. 6 - Pragerskinke",
+      "schemaName": "no. 6 - Pragerskinke",
+      "description": "Pragerskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
+      "schemaDescription": "Pragerskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
       "allergens": ["Gluten", "Melk"],
       "price": 245
     },
