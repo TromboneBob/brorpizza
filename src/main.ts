@@ -14,12 +14,11 @@ if (COMING_SOON) {
   `;
 }
 
-const SUPABASE_FUNCTION_URL =
-  "https://bfttnghiuqskmpfsmfep.supabase.co/functions/v1/pizza-status";
+const SUPABASE_FUNCTION_URL = "https://bfttnghiuqskmpfsmfep.supabase.co/functions/v1/pizza-status";
 
 const STATUS_MAP: Record<string, { cls: string; label: string }> = {
   Åpen: { cls: "open", label: "ÅPEN" },
-  "Åpner snart": { cls: "soon", label: "ÅPNER SNART IGJEN!" },
+  "Åpner snart": { cls: "soon", label: "ÅPNER LØRDAG 18.07" },
   "Nesten utsolgt": { cls: "low", label: "NESTEN UTSOLGT" },
   Utsolgt: { cls: "soldout", label: "UTSOLGT" },
   Stengt: { cls: "closed", label: "STENGT" },

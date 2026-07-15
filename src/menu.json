@@ -3,51 +3,5 @@
   "subtitle": "Porsjonspizza",
   "currency": "NOK",
   "currencyDisplay": "kr",
-  "items": [
-    {
-      "id": "margherita",
-      "displayName": "no. 2 - Margherita",
-      "schemaName": "no. 2 – Margherita",
-      "description": "Den opprinnelige. Tomat, fior di latte, basilikum.",
-      "schemaDescription": "Tomat, fior di latte, basilikum",
-      "allergens": ["Gluten", "Melk"],
-      "price": 205
-    },
-    {
-      "id": "skinke",
-      "displayName": "no. 6 - Pragerskinke",
-      "schemaName": "no. 6 - Pragerskinke",
-      "description": "Pragerskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
-      "schemaDescription": "Pragerskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
-      "allergens": ["Gluten", "Melk"],
-      "price": 245
-    },
-    {
-      "id": "sopp-og-bacon-hvit",
-      "displayName": "no. 15.5 - Sopp & Bacon (hvit)",
-      "schemaName": "no. 15.5 – Sopp & Bacon (hvit)",
-      "description": "Bacon fra Friheim Gardsmat, sopp, Crème fraîche, gressløk",
-      "schemaDescription": "Bacon fra Friheim Gardsmat, sopp, Crème fraîche, gressløk",
-      "allergens": ["Gluten", "Melk"],
-      "price": 245
-    },
-    {
-      "id": "peperoni",
-      "displayName": "no. 28 - Peperoni & Løk",
-      "schemaName": "no. 28 – Peperoni & Løk",
-      "description": "San Marzano, mozarella, peperoni, løk, oregano",
-      "schemaDescription": "San Marzano, mozarella, peperoni, oregano",
-      "allergens": ["Gluten", "Melk"],
-      "price": 235
-    },
-    {
-      "id": "mortadella-pesto",
-      "displayName": "no. 33 - Mortadella & Pesto*",
-      "schemaName": "no. 33 - Mortadella & Pesto*",
-      "description": "Mortadella, pesto, stracciatella, Crème fraîche, semitørkede tomater. *Må kjøle litt for montering, så beregn noe ekstra tilberedningstid.",
-      "schemaDescription": "Mortadella, pesto, stracciatella, Crème fraîche, semitørkede tomater",
-      "allergens": ["Gluten", "Melk", "Nøtter"],
-      "price": 295
-    }
-  ]
+  "items": []
 }
