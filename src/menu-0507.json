@@ -3,6 +3,80 @@
   "subtitle": "Porsjonspizza",
   "currency": "NOK",
   "currencyDisplay": "kr",
+  "ingredients": {
+    "surdeigsbunn": {
+      "name": "Surdeigsbunn",
+      "description": "Langtidshevet deig av hvete, vann, salt og surdeig. Gir en lett og luftig skorpe."
+    },
+    "san-marzano": {
+      "name": "San Marzano-tomater",
+      "description": "Søte, aromatiske tomater fra Sør-Italia med lavt syreinnhold."
+    },
+    "fior-di-latte": {
+      "name": "Fior di latte",
+      "description": "Fersk kumelksmozzarella med mild og myk smak."
+    },
+    "mozzarella": {
+      "name": "Mozzarella",
+      "description": "Mild, smeltbar kumelksost som binder toppingen sammen."
+    },
+    "basilikum": {
+      "name": "Basilikum",
+      "description": "Friske basilikumblader som gir en aromatisk, lett pepperaktig avslutning."
+    },
+    "oregano": {
+      "name": "Oregano",
+      "description": "Tørket oregano med varm, lett bitter smak."
+    },
+    "hvitloksolje": {
+      "name": "Hvitløksolje",
+      "description": "Olivenolje trukket med hvitløk for ekstra dybde."
+    },
+    "pragerskinke": {
+      "name": "Pragerskinke fra Nyyyt",
+      "description": "Lettrøkt svineskinke laget etter tsjekkisk tradisjon, mør og smaksrik."
+    },
+    "creme-fraiche": {
+      "name": "Crème fraîche",
+      "description": "Fransk rømme med høyt fettinnhold. Gir en rund, mild base i stedet for tomatsaus."
+    },
+    "bacon-friheim": {
+      "name": "Bacon fra Friheim Gardsmat",
+      "description": "Røkt bacon fra lokalt gårdsbruk, sprøstekt i ovnen."
+    },
+    "sopp": {
+      "name": "Sopp",
+      "description": "Stekt sopp med nøtteaktig, kjøttfull smak."
+    },
+    "gresslok": {
+      "name": "Gressløk",
+      "description": "Frisk, finhakket gressløk som gir en mild løksmak."
+    },
+    "peperoni": {
+      "name": "Peperoni",
+      "description": "Krydret, lufttørket pølse av svin og storfekjøtt."
+    },
+    "lon": {
+      "name": "Løk",
+      "description": "Tynne skiver løk som søtes og får karakter i ovnen."
+    },
+    "pesto": {
+      "name": "Pesto",
+      "description": "Saus av basilikum, pinjekjerner, parmesan og olivenolje."
+    },
+    "mortadella": {
+      "name": "Mortadella",
+      "description": "Italiensk, lettkokt kjøttpølse av svinekjøtt med myke fettbiter."
+    },
+    "stracciatella": {
+      "name": "Stracciatella",
+      "description": "Myk, trådet kumelksost fra burrata-familien, rik og kremet."
+    },
+    "semitorkede-tomater": {
+      "name": "Semitørkede tomater",
+      "description": "Tomater delvis tørket i ovnen for konsentrert sødme."
+    }
+  },
   "items": [
     {
       "id": "margherita",
@@ -10,6 +84,8 @@
       "schemaName": "no. 2 – Margherita",
       "description": "Den opprinnelige. Tomat, fior di latte, basilikum.",
       "schemaDescription": "Tomat, fior di latte, basilikum",
+      "image": "/menu-images/margherita.webp",
+      "ingredientIds": ["surdeigsbunn", "san-marzano", "fior-di-latte", "basilikum"],
       "allergens": ["Gluten", "Melk"],
       "price": 205
     },
@@ -19,6 +95,8 @@
       "schemaName": "no. 6 - Pragerskinke",
       "description": "Pragerskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
       "schemaDescription": "Pragerskinke fra Nyyyt, san marzano, mozzarella, oregano, basilikum, hvitløksolje.",
+      "image": "/menu-images/skinke.webp",
+      "ingredientIds": ["surdeigsbunn", "san-marzano", "pragerskinke", "mozzarella", "oregano", "basilikum", "hvitloksolje"],
       "allergens": ["Gluten", "Melk"],
       "price": 245
     },
@@ -28,6 +106,8 @@
       "schemaName": "no. 15.5 – Sopp & Bacon (hvit)",
       "description": "Bacon fra Friheim Gardsmat, sopp, Crème fraîche, gressløk",
       "schemaDescription": "Bacon fra Friheim Gardsmat, sopp, Crème fraîche, gressløk",
+      "image": "/menu-images/sopp-og-bacon-hvit.webp",
+      "ingredientIds": ["surdeigsbunn", "creme-fraiche", "bacon-friheim", "sopp", "gresslok"],
       "allergens": ["Gluten", "Melk"],
       "price": 245
     },
@@ -37,6 +117,8 @@
       "schemaName": "no. 28 – Peperoni & Løk",
       "description": "San Marzano, mozarella, peperoni, løk, oregano",
       "schemaDescription": "San Marzano, mozarella, peperoni, oregano",
+      "image": "/menu-images/peperoni.webp",
+      "ingredientIds": ["surdeigsbunn", "san-marzano", "mozzarella", "peperoni", "lon", "oregano"],
       "allergens": ["Gluten", "Melk"],
       "price": 235
     },
@@ -46,6 +128,8 @@
       "schemaName": "no. 33 - Mortadella & Pesto*",
       "description": "Mortadella, pesto, stracciatella, Crème fraîche, semitørkede tomater. *Må kjøle litt for montering, så beregn noe ekstra tilberedningstid.",
       "schemaDescription": "Mortadella, pesto, stracciatella, Crème fraîche, semitørkede tomater",
+      "image": "/menu-images/mortadella-pesto.webp",
+      "ingredientIds": ["surdeigsbunn", "pesto", "mortadella", "stracciatella", "creme-fraiche", "semitorkede-tomater"],
       "allergens": ["Gluten", "Melk", "Nøtter"],
       "price": 295
     }
