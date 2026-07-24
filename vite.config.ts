@@ -2,19 +2,28 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite-plus";
 import type { Menu } from "./src/menuTypes";
+import type { CateringMenu } from "./src/cateringMenuTypes";
 import { renderDashboardPizzas, renderMenuItems } from "./src/renderMenu";
+import { renderCateringMenuItems } from "./src/renderCateringMenu";
 import { getFaqJsonLd, getRestaurantJsonLd } from "./src/structuredData";
 
 const menuPath = fileURLToPath(new URL("./src/menu.json", import.meta.url));
+const cateringMenuPath = fileURLToPath(new URL("./src/cateringMenu.json", import.meta.url));
 const indexPath = fileURLToPath(new URL("./index.html", import.meta.url));
+const cateringPath = fileURLToPath(new URL("./catering.html", import.meta.url));
 const dashboardPath = fileURLToPath(
   new URL("./dashboard.html", import.meta.url),
 );
 const menuPlaceholder = "<!-- bror-menu-items -->";
+const cateringPlaceholder = "<!-- bror-catering-menu-items -->";
 const dashboardPizzasPlaceholder = "__BROR_DASHBOARD_PIZZAS__";
 
 function readMenu() {
   return JSON.parse(readFileSync(menuPath, "utf8")) as Menu;
+}
+
+function readCateringMenu() {
+  return JSON.parse(readFileSync(cateringMenuPath, "utf8")) as CateringMenu;
 }
 
 function toJsonLd(data: unknown) {
@@ -23,6 +32,10 @@ function toJsonLd(data: unknown) {
 
 function injectMenuHtml(html: string, menu: Menu) {
   return html.replace(menuPlaceholder, renderMenuItems(menu));
+}
+
+function injectCateringHtml(html: string, catering: CateringMenu) {
+  return html.replace(cateringPlaceholder, renderCateringMenuItems(catering));
 }
 
 function injectDashboardPizzas(html: string, menu: Menu) {
@@ -53,19 +66,26 @@ function menuHtmlPlugin() {
       ws: { send: (payload: { type: "full-reload" }) => void };
     }) {
       server.watcher.add(menuPath);
+      server.watcher.add(cateringMenuPath);
       server.watcher.on("change", (path) => {
-        if (path === menuPath) {
+        if (path === menuPath || path === cateringMenuPath) {
           server.ws.send({ type: "full-reload" });
         }
       });
     },
     transformIndexHtml(html: string) {
-      const menu = readMenu();
+      if (html.includes(cateringPlaceholder)) {
+        const catering = readCateringMenu();
+        return injectCateringHtml(html, catering);
+      }
+
       if (html.includes(menuPlaceholder)) {
+        const menu = readMenu();
         return injectStructuredData(injectMenuHtml(html, menu), menu);
       }
 
       if (html.includes(dashboardPizzasPlaceholder)) {
+        const menu = readMenu();
         return injectDashboardPizzas(html, menu);
       }
 
@@ -84,6 +104,7 @@ export default defineConfig({
       input: {
         main: indexPath,
         dashboard: dashboardPath,
+        catering: cateringPath,
       },
     },
   },
